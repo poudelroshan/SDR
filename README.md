@@ -29,5 +29,5 @@ For this part, we created two text files: `sentFile.txt` and `ReceivedFile.txt` 
 ![GRC Diagram of File Transmitter and Receiver](./Images/Tranmitter_Receiver_GRC.png)
 
 
-###Disclaimer:
+### Disclaimer:
 We are no experts in SDR. Our knowledge of SDR is through this hit and trial project that we completed over a span of 3 days. Some of the configurations that we have made in these GRC files might not make sense to an expert in SDR. But these configurations worked for us with the above mentioned setup, and you may reproduce it using the GRC files provided. Also, the GRC file for File Transmitter and Receiver was received from [this github source](https://github.com/patel999jay/ADALM-Pluto-File-Transfer) 
