@@ -12,21 +12,21 @@ Ulukbek Aitmatov: ulukbek.aitmatov<at>stonybrook.edu
 
 ## WIFI Jammer
 The Wifi jammer is used to block wifi signals from any wifi device. While it cannot disconnect the device from its source, it blocks any incoming or outgoing packets from the blocked device by creating a noise that is stronger than that of the wifi transmitter, thus overpowering it and acting as if the Wifi Jammer is the Wifi transmitter. To block a certain wifi source, we first find the channel number and the corresponding frequency of the source. Then, we set the SDR to transmit a noise of same frequency as the Wifi Source.
-![GRC Diagram of WIFI Jammer](./images/WIFI_Jammer_GRC.png)
+![GRC Diagram of WIFI Jammer](./Images/WIFI_Jammer_GRC.png)
 
 
 ## LTE Jammer
 The LTE Jammer uses a similar technique as the Wifi Jammer where we block the Downlink frequency used by the LTE. To find the downlink LTE freqency, we used an android app named LTE Discovery from the play store. The app showed that for LGU+ in South Korea, the downlink frequency hopped between 2650 MHZ, 2120 MHZ, and 889 MHZ. So, we used three SDRs and tuned it such that it blocks each of the SDR blocks one of these three frequencies. Doing so, our mobile phone could not connect to any other frequency, and thus the LTE signal was jammed. In this case, unlike in WIFI Jammer, the cellphone got disconnected from the Cellphone Tower as well.
-![GRC Diagram of LTE Jammer](./images/LTE_Jammer_GRC.png)
+![GRC Diagram of LTE Jammer](./Images/LTE_Jammer_GRC.png)
 
 
 ## FM Radio Receiver
 The FM Radio receiver is used to receive the FM Radio signals from a radio station, and to demodulate the received signals, and convert it into audio. The RX antenna of the SDR was tuned to a FM Station frequency, usually in MHZ. 
-![GRC Diagram of FM Radio Receiver](./images/FM_Radio_GRC.png)
+![GRC Diagram of FM Radio Receiver](./Images/FM_Radio_GRC.png)
 
 ## File Transmitter and Receiver
 For this part, we created two text files: `sentFile.txt` and `ReceivedFile.txt` The  `sentFile.txt` contains the text that we need to send via the SDR. The `ReceivedFile.txt` is usually empty with an option to append or overwrite to it. In this example, we are using a single SDR to send and receive the text file in Parallel. The TX antenna of the PLUTO SDR is used to send the file, and the RX antenna is used to receive it.
-![GRC Diagram of File Transmitter and Receiver](./images/Tranmitter_Receiver_GRC)
+![GRC Diagram of File Transmitter and Receiver](./Images/Tranmitter_Receiver_GRC)
 
 
 **###Disclaimer:**
