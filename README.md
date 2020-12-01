@@ -2,8 +2,8 @@
 This repository consists of the projects that we completed using Software Defined Radio (SDR) for our Computer Networks Class.
 
 ### Authors:
-Roshan Poudel: roshan.poudel<at>stonybrook.edu
-Ulukbek Aitmatov: ulukbek.aitmatov<at>stonybrook.edu
+**Roshan Poudel:** roshan.poudel<at>stonybrook.edu <br>
+**Ulukbek Aitmatov:** ulukbek.aitmatov<at>stonybrook.edu
 
 ## Setup:
 1. Windows 10
@@ -28,6 +28,9 @@ The FM Radio receiver is used to receive the FM Radio signals from a radio stati
 For this part, we created two text files: `sentFile.txt` and `ReceivedFile.txt` The  `sentFile.txt` contains the text that we need to send via the SDR. The `ReceivedFile.txt` is usually empty with an option to append or overwrite to it. In this example, we are using a single SDR to send and receive the text file in Parallel. The TX antenna of the PLUTO SDR is used to send the file, and the RX antenna is used to receive it.
 ![GRC Diagram of File Transmitter and Receiver](./Images/Tranmitter_Receiver_GRC.png)
 
+
+## Youtube Video Demonstration:
+[![Youtube Video Demonstration](https://img.youtube.com/vi/B0036XWCacU/0.jpg)](https://www.youtube.com/watch?v=B0036XWCacU)
 
 ### Disclaimer:
 We are no experts in SDR. Our knowledge of SDR is through this hit and trial project that we completed over a span of 3 days. Some of the configurations that we have made in these GRC files might not make sense to an expert in SDR. But these configurations worked for us with the above mentioned setup, and you may reproduce it using the GRC files provided. Also, the GRC file for File Transmitter and Receiver was received from [this github source](https://github.com/patel999jay/ADALM-Pluto-File-Transfer) 
