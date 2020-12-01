@@ -2,8 +2,8 @@
 This repository consists of the projects that we completed using Software Defined Radio (SDR) for our Computer Networks Class.
 
 ### Authors:
-**Roshan Poudel:** roshan.poudel<at>stonybrook.edu <br>
-**Ulukbek Aitmatov:** ulukbek.aitmatov<at>stonybrook.edu
+**Roshan Poudel:** roshan.poudel[at]stonybrook.edu <br>
+**Ulukbek Aitmatov:** ulukbek.aitmatov[at]stonybrook.edu
 
 ## Setup:
 1. Windows 10
